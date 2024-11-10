@@ -264,7 +264,9 @@ Format: `deletecc INDEX`
 
 Clears all entries from the ConcertPhonebook.
 
-WARNING: This action is not reversible.
+<div markdown="span" class="alert alert-warning">:warning: Warning:  
+This action is not reversible.
+</div>
 
 Format: `clear`
 
