@@ -23,7 +23,7 @@ jobs:
 
       - name: Run repository-wide tests
         if: runner.os == 'Linux'
-        working-directory:  ${{ github.workspace }}/.github
+        working-directory: ${{ github.workspace }}/.github
         run: ./run-checks.sh
 
       - name: Validate Gradle Wrapper
@@ -45,3 +45,6 @@ jobs:
         with:
           token: ${{ secrets.CODECOV_TOKEN }}
           fail_ci_if_error: false
+
+      - name: Deploy PR Preview
+        uses: rossjrw/pr-preview-action@v1.4.8
