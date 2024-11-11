@@ -45,6 +45,3 @@ jobs:
         with:
           token: ${{ secrets.CODECOV_TOKEN }}
           fail_ci_if_error: false
-
-      - name: Deploy PR Preview
-        uses: rossjrw/pr-preview-action@v1.4.8
